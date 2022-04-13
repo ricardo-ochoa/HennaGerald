@@ -2,9 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 7vmin;
   pointer-events: none;
+  margin-top: 4rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +14,137 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main-text{
+  padding-top: 3rem;
+  color: aliceblue;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+  margin-bottom: 0;
+  /* background: linear-gradient(180deg, #FFFFFF 51.04%, #463529 100%); */
+}
+
+.subtitle{
+  font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+margin-top: 0;
+
+}
+
+.main {
+  opacity: 0.6;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  margin-top: 6rem;
+}
+
+.scene{
+  width: 600px;
+  height: 600px;
+}
+
+.backgorund{
+  background-image: url("./bg.png");
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.backgorund a {
+  text-decoration: none;
+}
+
+.logo_henna{
+  width: 300px;
+}
+
+.cta{
+  width: 300px;
+  height: 50px;
   color: white;
+  font-size: 1.5rem;
+  background-color: rgb(114, 207, 21);
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
 }
 
-.App-link {
-  color: #61dafb;
+.cta:hover{
+  transform: scale(0.99);
+  background-color: rgb(105, 196, 14);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon{
+  margin-right: 0.4rem;
+  width: 30px;
+  height: 30px;
+}
+
+
+@media (max-width: 800px) {
+
+  .logo {
+    height: 12vmin;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .backgorund{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
+
+  .main {
+    z-index: 0;
+    opacity: 0.7;
+    height: 600px;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+    margin-top: 6rem;
+  }
+
+
 }
