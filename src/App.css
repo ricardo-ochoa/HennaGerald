@@ -66,11 +66,11 @@ margin-top: 0;
 }
 
 .backgorund{
-  background-image: url("./bg.jpg");
+  background-image: url("../public/bg.jpg");
   background-position: center;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 
   display: flex;
   flex-direction: column;
@@ -146,5 +146,44 @@ margin-top: 0;
     margin-top: 6rem;
   }
 
+  .main-text{
+    padding-top: 0rem;
+  }
+  
+  h1{
+    font-size: 60px;
+    line-height: 50px;
+    /* background: linear-gradient(180deg, #FFFFFF 51.04%, #463529 100%); */
+  }
+  
+  .subtitle{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 2rem;
+  }
 
+
+  
+}
+
+
+@media (max-width: 320px) {
+
+  .main-text{
+    padding-top: 0rem;
+  }
+  
+  h1{
+    font-size: 50px;
+    line-height: 50px;
+    /* background: linear-gradient(180deg, #FFFFFF 51.04%, #463529 100%); */
+  }
+  
+  .subtitle{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 2rem;
+  }
 }
